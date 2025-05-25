@@ -1,0 +1,147 @@
+.contact-section {
+  padding: 3rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-section h1 {
+  color: #0b3d91;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section p {
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+  align-self: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #0b3d91;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background-color: white; /* <-- hier ist die Änderung */
+  color: #333;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0b3d91;
+  box-shadow: 0 0 0 2px rgba(11, 61, 145, 0.2);
+}
+
+button.cta-button {
+  align-self: center;
+  border: 2px solid #0b3d91;
+  background-color: transparent;
+  color: #0b3d91;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+button.cta-button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: #0b3d91;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+button.cta-button:hover {
+  color: white;
+}
+
+button.cta-button:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+.faq-section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.faq-section h2 {
+  text-align: center;
+  color: #0b3d91;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  color: #0b3d91;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #d0dcef;
+  transition: background-color 0.2s;
+}
+
+.faq-question:hover {
+  background-color: #f5f8fc;
+}
+
+.faq-answer {
+  padding: 0.5rem 0 1rem 0;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.faq-question:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(11, 61, 145, 0.3);
+  background-color: #f5f8fc;
+}

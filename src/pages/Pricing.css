@@ -1,0 +1,266 @@
+/* Pricing.css */
+.pricing-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 4rem; /* Abstand zur Navbar */
+}
+
+.pricing-section {
+  flex: 1;
+  min-width: 340px;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.pricing-section h1 {
+  color: #0b3d91;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.calculator-info {
+  background-color: #f4f8ff;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #0b3d91;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.service-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab-button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background-color: #eee;
+  color: #333;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-button.active {
+  background-color: #0b3d91;
+  color: white;
+}
+
+.slider-group {
+  text-align: left;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+.slider-group label {
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  color: #0b3d91;
+}
+
+.slider-group input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  accent-color: #0b3d91;
+}
+
+.price-live-box {
+  flex: 1;
+  min-width: 320px;
+  max-width: 400px;
+  background-color: #f4f8ff;
+  padding: 3rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.price-live-box h2 {
+  color: #0b3d91;
+  margin: 0;
+}
+
+.price-live-box h3 {
+  color: #0b3d91;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.price-live-box ul {
+  list-style: none;
+  padding: 0;
+  color: #333;
+  font-size: 0.95rem;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.price-live-box li {
+  margin-bottom: 0.5rem;
+}
+
+.price-live-box .disclaimer {
+  font-size: 0.8rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .pricing-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.price-live-box p {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
+
+.price-live-box strong {
+  color: #0b3d91;
+}
+
+.price-live-box .disclaimer {
+  font-size: 0.8rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: #0b3d91;
+  vertical-align: middle;
+}
+
+.price-benefits {
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left;
+  max-width: 400px;
+}
+
+.price-benefits h4 {
+  color: #0b3d91;
+  margin-bottom: 0.75rem;
+}
+
+.price-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.price-benefits li {
+  margin-bottom: 0.5rem;
+}
+
+.slider-explanation {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.slider-explanation h4 {
+  color: #0b3d91;
+  margin-bottom: 1rem;
+}
+
+.slider-explanation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.slider-explanation li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.slider-explanation strong {
+  color: #0b3d91;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.pricing-section-full {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.pricing-calculator,
+.price-live-box {
+  flex: 1;
+  min-width: 300px;
+}
+
+.slider-explanation-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto 4rem auto;
+  padding: 0 1rem;
+}
+
+.slider-explanation {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.slider-explanation h4 {
+  color: #0b3d91;
+  margin-bottom: 1rem;
+}
+
+.slider-explanation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.slider-explanation li {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.slider-explanation strong {
+  color: #0b3d91;
+}

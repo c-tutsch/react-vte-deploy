@@ -1,0 +1,321 @@
+/* Global */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.home {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #0b3d91;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  position: relative;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  color: #0b3d91;
+  border: 2px solid #0b3d91;
+  background-color: transparent;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #0b3d91;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+.cta-button:hover::before {
+  width: 100%;
+}
+
+.cta-button:hover {
+  color: white;
+}
+
+/* Intro Section */
+.intro {
+  background-color: #f5f8fc;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #0b3d91;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  color: #333;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Services Overview */
+.services-overview {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.services-overview h2 {
+  color: #0b3d91;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #eaf0fa;
+  color: #0b3d91;
+  border: 1px solid #d0dcef;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Benefits */
+.benefits {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.benefits h2 {
+  color: #0b3d91;
+}
+
+.benefits ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.benefits li {
+  margin-bottom: 0.5rem;
+}
+
+/* Offerings */
+.offerings {
+  background-color: #f9f9f9;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.offerings h2 {
+  color: #0b3d91;
+  margin-bottom: 2rem;
+}
+
+.offer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.offer-card {
+  background-color: white;
+  color: #333;
+  border: 2px solid #d0dcef;
+  border-radius: 12px;
+  width: 280px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.offer-card h3 {
+  color: #0b3d91;
+  margin-bottom: 1rem;
+}
+
+.offer-card p {
+  margin-bottom: 1rem;
+}
+
+.offer-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.offer-card li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Consulting */
+.consulting {
+  background-color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.consulting h2 {
+  color: #0b3d91;
+  margin-bottom: 1.5rem;
+}
+
+.consulting-text {
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.consulting-points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.point {
+  background-color: #f5f8fc;
+  border-left: 5px solid #0b3d91;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: left;
+}
+
+.point h3 {
+  color: #0b3d91;
+  margin-bottom: 0.5rem;
+}
+
+.point p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.consulting-cta {
+  margin-top: 2rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #f5f8fc;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.cta-section h2 {
+  color: #0b3d91;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .services-grid,
+  .offer-grid,
+  .consulting-points {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card,
+  .offer-card,
+  .point {
+    width: 90%;
+    max-width: 350px;
+  }
+}
+
+.visual-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.visual-card {
+  width: 300px;
+  background-color: #f5f8fc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  padding: 1rem;
+}
+
+.visual-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.visual-card h3 {
+  color: #0b3d91;
+  margin-bottom: 0.5rem;
+}
+
+.visual-card p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .visual-services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
