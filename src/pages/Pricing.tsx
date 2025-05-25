@@ -1,5 +1,4 @@
-// src/pages/Pricing.tsx
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./Pricing.css";
 import { FaCreditCard, FaEnvelopeOpenText, FaShieldAlt } from "react-icons/fa";
 
