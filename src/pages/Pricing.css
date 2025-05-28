@@ -264,3 +264,33 @@
 .slider-explanation strong {
   color: #0b3d91;
 }
+
+.pricing-formula {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #f4f8ff; 
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333; 
+  flex-basis: 100%; 
+}
+
+
+.pricing-formula h2 {
+  color: #0b3d91; 
+  margin-bottom: 1rem;
+}
+
+.pricing-formula ul {
+  list-style: disc;
+  padding-left: 1.5rem; /* Bestehender Stil */
+}
+
+.formula-note {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}

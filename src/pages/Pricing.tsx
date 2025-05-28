@@ -55,6 +55,21 @@ const Pricing = () => {
           Wähle einen Dienst und passe die Parameter über die Slider an. Die Preisübersicht auf der rechten Seite wird automatisch aktualisiert.
         </p>
 
+              <div className="pricing-formula">
+        <h2>Wie setzen sich die Kosten zusammen?</h2>
+        <p>
+          Die monatlichen Gesamtkosten werden dynamisch auf Basis Ihrer Auswahl berechnet:
+        </p>
+        <ul>
+          <li><strong>Compute:</strong> Anzahl Instanzen × (CPU × 5 € + RAM × 2 €) × Stunden × Tage</li>
+          <li><strong>Storage:</strong> Speicherplatz × 0.02 €/GB + Backup (abhängig von Häufigkeit)</li>
+          <li><strong>Datenbanken:</strong> Anzahl DBs × [(CPU × 4 € + RAM × 3 €) × 720 + Speicher × 0.01 €]</li>
+        </ul>
+        <p className="formula-note">
+          Diese Formeln dienen zur Orientierung und beinhalten keine individuellen Preisnachlässe.
+        </p>
+      </div>
+
         <div className="service-tabs">
           {["compute", "storage", "database"].map((s) => (
             <button

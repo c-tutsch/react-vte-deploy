@@ -6,6 +6,8 @@ import Pricing from './pages/Pricing';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Pricavy from './pages/Privacy';
+import Impressum from './pages/Impressum';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Pricavy />} />
+          <Route path="/impressum" element={<Impressum />} />
         </Routes>
       </main>
         <Footer />

@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-logo">CloudNova © 2025</div>
         <nav className="footer-links">
           <Link to="/impressum">Impressum</Link>
-          <Link to="/datenschutz">Datenschutz</Link>
+          <Link to="/privacy">Datenschutz</Link>
           <Link to="/contact">Kontakt</Link>
         </nav>
       </div>
